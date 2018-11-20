@@ -2,6 +2,6 @@
 
 CPSC 473 Final Project
  Collaborators:
-  Zachary McEachern\n
+  Zachary McEachern
   Jonathan Sumarto
   Dom Feeley
