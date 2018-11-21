@@ -28,9 +28,9 @@
 
  #mainNav .navbar-brand{color:#e6a756}
 
- #mainNav .navbar-nav .nav-item .nav-link{color:rgba(255,255,255,.7);font-weight:800}
+ #mainNav .navbar-nav .nav-item .nav-link{color:rgba(152,255,255,.7);font-weight:800}/*Navigation bar options without click*/
 
- #mainNav .navbar-nav .nav-item.active .nav-link{color:#e6a756}
+ #mainNav .navbar-nav .nav-item.active .nav-link{color:white}/*Navigation bar options with click*/
 
  @media (min-width:992px){#mainNav .navbar-nav .nav-item .nav-link{font-size:.9rem}#mainNav .navbar-nav .nav-item .nav-link:hover{color:rgba(255,255,255,.4)}#mainNav .navbar-nav .nav-item.active .nav-link:hover{color:#e6a756}}
 
