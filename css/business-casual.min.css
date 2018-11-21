@@ -22,13 +22,13 @@
 
  .section-heading .section-heading-lower{display:block;font-size:3rem;font-weight:100}
 
- .bg-faded{background-color:rgba(255,255,255,.85)}
+ .bg-faded{background-color:rgb(194, 217, 222,.90)} /*From Don't Do To Do*/
 
- #mainNav{background-color:gray;font-family:Raleway} /*Navigation bar color*/
+ #mainNav{background-color:rgb(49, 83, 117,.7);font-family:Raleway} /*Navigation bar color*/
 
  #mainNav .navbar-brand{color:#e6a756}
 
- #mainNav .navbar-nav .nav-item .nav-link{color:rgba(152,255,255,.7);font-weight:800}/*Navigation bar options without click*/
+ #mainNav .navbar-nav .nav-item .nav-link{color:#e6a756;font-weight:800}/*Navigation bar options without click*/
 
  #mainNav .navbar-nav .nav-item.active .nav-link{color:white}/*Navigation bar options with click*/
 
@@ -44,7 +44,7 @@
 
  .cta{padding-top:5rem;padding-bottom:5rem;background-color:rgba(230,167,86,.9)}
 
- .cta .cta-inner{position:relative;padding:3rem;margin:.5rem;background-color:rgba(255,255,255,.85)}
+ .cta .cta-inner{position:relative;padding:3rem;margin:.5rem;background-color:rgb(194, 217, 222,.90)} /* our promise to you*/
 
  .cta .cta-inner:before{border-radius:.5rem;content:'';position:absolute;top:-.5rem;bottom:-.5rem;left:-.5rem;right:-.5rem;border:.25rem solid rgba(255,255,255,.85)}
 
@@ -62,7 +62,7 @@
 
  .address strong{font-size:1.2rem}
 
- .footer{background-color:rgba(47,23,15,.9)}
+ .footer{background-color:rgb(49, 83, 117,.7)}
 
  .text-primary{color:#e6a756!important}
 
@@ -70,9 +70,9 @@
 
  .btn{-webkit-box-shadow:0 3px 3px 0 rgba(33,37,41,.1);box-shadow:0 3px 3px 0 rgba(33,37,41,.1)}
 
- .btn-primary{background-color:#e6a756;border-color:#e6a756}
+ .btn-primary{background-color:#e6a756;border-color:rgb(49, 83, 117)}
 
- .btn-primary:active,.btn-primary:focus,.btn-primary:hover{background-color:#df902a;border-color:#df902a}
+ .btn-primary:active,.btn-primary:focus,.btn-primary:hover{background-color:#df902a;border-color:#df902a} /*home page button*/
 
  .font-weight-light{font-weight:100!important}
 
