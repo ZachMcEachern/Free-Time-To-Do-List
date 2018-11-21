@@ -68,9 +68,9 @@
 
  .bg-primary{background-color:#e6a756!important}
 
- .btn{-webkit-box-shadow:0 3px 3px 0 rgba(33,37,41,.1);box-shadow:0 3px 3px 0 rgba(33,37,41,.1)}
+ .btn{-webkit-box-shadow:0 3px 3px 0 rgba(33,37,41,.1);box-shadow:0 3px 3px 0 rgba(33,37,41,.1)}/*home page button*/
 
- .btn-primary{background-color:#e6a756;border-color:rgb(49, 83, 117)}
+ .btn-primary{background-color:#e6a756;border-color:rgb(49, 83, 117)}/*home page button*/
 
  .btn-primary:active,.btn-primary:focus,.btn-primary:hover{background-color:#df902a;border-color:#df902a} /*home page button*/
 
