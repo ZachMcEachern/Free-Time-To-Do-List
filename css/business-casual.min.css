@@ -24,7 +24,7 @@
 
  .bg-faded{background-color:rgba(255,255,255,.85)}
 
- #mainNav{background-color:rgba(47,23,15,.9);font-family:Raleway}
+ #mainNav{background-color:gray;font-family:Raleway} /*Navigation bar color*/
 
  #mainNav .navbar-brand{color:#e6a756}
 
