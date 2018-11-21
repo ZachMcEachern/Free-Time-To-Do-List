@@ -80,7 +80,7 @@
 
 .bookImg {font-family:Lora;background:-webkit-gradient(linear,left top,left bottom,from(rgba(30,15,15,.65))),url(../img/books.jpg);background:linear-gradient(rgba(47,23,15,.65)),url(../img/books.jpg);background-attachment:fixed;background-position:center;background-size:cover}
 
-.tv_showImg{font-family:Lora;background:-webkit-gradient(linear,left top,left bottom,from(rgba(30,15,15,.65))),url(../img/tv_show.jpg);background:linear-gradient(rgba(47,23,15,.65)),url(../img/tv_show.jpg);background-attachment:fixed;background-position:center;background-size:cover}
+.tv_showImg{font-family:Lora;background:-webkit-gradient(linear,left top,left bottom,from(rgba(30,15,15,.45))),url(../img/tv_show.jpg);background:linear-gradient(rgba(47,23,15,.65)),url(../img/tv_show.jpg);background-attachment:fixed;background-position:center;background-size:cover}
 
 .moviesImg{font-family:Lora;background:-webkit-gradient(linear,left top,left bottom,from(rgba(30,15,15,.65))),url(../img/movies.jpg);background:linear-gradient(rgba(47,23,15,.65)),url(../img/movies.jpg);background-attachment:fixed;background-position:center;background-size:cover}
 
