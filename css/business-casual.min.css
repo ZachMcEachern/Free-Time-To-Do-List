@@ -42,11 +42,11 @@
 
  @media (min-width:1200px){.intro .intro-text{width:45%}}
 
- .cta{padding-top:5rem;padding-bottom:5rem;background-color:rgba(230,167,86,.9)}
+ .cta{padding-top:5rem;padding-bottom:5rem;background-color:rgba(230,167,86,.5)} /* our promise to you*/
 
  .cta .cta-inner{position:relative;padding:3rem;margin:.5rem;background-color:rgb(194, 217, 222,.90)} /* our promise to you*/
 
- .cta .cta-inner:before{border-radius:.5rem;content:'';position:absolute;top:-.5rem;bottom:-.5rem;left:-.5rem;right:-.5rem;border:.25rem solid rgba(255,255,255,.85)}
+ .cta .cta-inner:before{border-radius:.5rem;content:'';position:absolute;top:-.5rem;bottom:-.5rem;left:-.5rem;right:-.5rem;border:.25rem solid rgba(255,255,255,.85)} /* our promise to you*/
 
  @media (min-width:992px){.about-heading .about-heading-img{position:relative;z-index:0}.about-heading .about-heading-content{margin-top:-5rem;position:relative;z-index:1}}
 
@@ -70,18 +70,20 @@
 
  .btn{-webkit-box-shadow:0 3px 3px 0 rgba(33,37,41,.1);box-shadow:0 3px 3px 0 rgba(33,37,41,.1)}/*home page button*/
 
- .btn-primary{background-color:#e6a756;border-color:rgb(49, 83, 117)}/*home page button*/
+ .btn-primary{background-color:#e6a756;border-color:rgba(49, 83, 117,.5)}/*home page button*/
 
  .btn-primary:active,.btn-primary:focus,.btn-primary:hover{background-color:#df902a;border-color:#df902a} /*home page button*/
 
  .font-weight-light{font-weight:100!important}
 
-.bookImg {font-family:Lora;background:-webkit-gradient(linear,left top,left bottom,from(rgba(47,23,15,.65))),url(../img/books.jpg);background:linear-gradient(rgba(100,100,100,.65)),url(../img/books.jpg);background-attachment:fixed;background-position:center;background-size:cover}
+ /*background images*/
 
-.tv_showImg{font-family:Lora;background:-webkit-gradient(linear,left top,left bottom,from(rgba(47,23,15,.65))),url(../img/tv_show.jpg);background:linear-gradient(rgba(47,23,15,.65)),url(../img/tv_show.jpg);background-attachment:fixed;background-position:center;background-size:cover}
+.bookImg {font-family:Lora;background:-webkit-gradient(linear,left top,left bottom,from(rgba(30,15,15,.65))),url(../img/books.jpg);background:linear-gradient(rgba(47,23,15,.65)),url(../img/books.jpg);background-attachment:fixed;background-position:center;background-size:cover}
 
-.moviesImg{font-family:Lora;background:-webkit-gradient(linear,left top,left bottom,from(rgba(47,23,15,.65))),url(../img/movies.jpg);background:linear-gradient(rgba(47,23,15,.65)),url(../img/movies.jpg);background-attachment:fixed;background-position:center;background-size:cover}
+.tv_showImg{font-family:Lora;background:-webkit-gradient(linear,left top,left bottom,from(rgba(30,15,15,.65))),url(../img/tv_show.jpg);background:linear-gradient(rgba(47,23,15,.65)),url(../img/tv_show.jpg);background-attachment:fixed;background-position:center;background-size:cover}
 
-.homeImg{font-family:Lora;background:-webkit-gradient(linear,left top,left bottom,from(rgba(47,23,15,.65))),url(../img/home.jpg);background:linear-gradient(rgba(47,23,15,.65)),url(../img/home.jpg);background-attachment:fixed;background-position:center;background-size:cover}
+.moviesImg{font-family:Lora;background:-webkit-gradient(linear,left top,left bottom,from(rgba(30,15,15,.65))),url(../img/movies.jpg);background:linear-gradient(rgba(47,23,15,.65)),url(../img/movies.jpg);background-attachment:fixed;background-position:center;background-size:cover}
 
-.vgImg{font-family:Lora;background:-webkit-gradient(linear,left top,left bottom,from(rgba(47,23,15,.65))),url(../img/games.jpg);background:linear-gradient(rgba(47,23,15,.65)),url(../img/games.jpg);background-attachment:fixed;background-position:center;background-size:cover}
+.homeImg{font-family:Lora;background:-webkit-gradient(linear,left top,left bottom,from(rgba(30,15,15,.65))),url(../img/home.jpg);background:linear-gradient(rgba(47,23,15,.65)),url(../img/home.jpg);background-attachment:fixed;background-position:center;background-size:cover}
+
+.vgImg{font-family:Lora;background:-webkit-gradient(linear,left top,left bottom,from(rgba(30,15,15,.65))),url(../img/games.jpg);background:linear-gradient(rgba(47,23,15,.65)),url(../img/games.jpg);background-attachment:fixed;background-position:center;background-size:cover}
