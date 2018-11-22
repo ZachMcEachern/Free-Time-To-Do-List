@@ -25,22 +25,29 @@
   var Truck = App.Truck;
   var DataStore = App.DataStore;
   var FormHandler = App.FormHandler;
-  var Validation = App.Validation;
   var CheckList = App.CheckList; //import checklist module
 
-  var myTruck = new Truck ('ncc-1701', new DataStore());
-  window.myTruck = myTruck;
+  //var checkList = new CheckList(CHECKLIST_SELECTOR);
+  //checkList.addClickHandler(myTruck.deliverOrder.bind(myTruck));
 
-  var checkList = new CheckList(CHECKLIST_SELECTOR);
-  checkList.addClickHandler(myTruck.deliverOrder.bind(myTruck));
+  var formHandler_tv = new FormHandler(TV_SHOW_FORM_SELECTOR);
+  var tv_db = new DataStore();
+  window.tv_db = tv_db;
 
-  var formHandler = new FormHandler(FORM_SELECTOR);
+  formHandler_tv.addSubmitHandler(tv_db.add_todo.bind(tv_db));
+  console.log(formHandler_tv);
+
+
+
+/*
+  formHandler.addSubmitHandler();
+  console.log(formHandler);
 
   formHandler.addSubmitHandler(function (data){
     myTruck.createOrder.call(myTruck,data); //returns AND invokes new version of function
     checkList.addRow.call(checkList, data);
   });
-
+*/
   //formHandler.addInputHandler(Validation.isCompanyEmail); //calls email validation process
 
 

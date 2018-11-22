@@ -1,13 +1,15 @@
 (function () {
   var App = window.App || {};
 
+  var todo_list = new Array();
+
   function DataStore() {
-    //console.log('From DataStore Function');
     this.data = {};
   }
 
-  DataStore.prototype.add = function (key,val){
-    this.data[key] = val;
+  DataStore.prototype.add_todo = function (val){
+    todo_list.push(val);
+    console.log(todo_list);
   };
 
   DataStore.prototype.get = function (key){ //looks up value for instance's data property

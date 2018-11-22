@@ -26,8 +26,9 @@
         });
         console.log(data);
         fn(data);
-        this.reset(); //clears UI of the old data
-        this.elements[0].focus(); //highlights input box
+
+        //this.reset(); //clears UI of the old data
+        //this.elements[0].focus(); //highlights input box
     });
   };
 

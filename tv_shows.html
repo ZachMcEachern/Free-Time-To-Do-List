@@ -71,26 +71,26 @@
               <div class="bg-faded rounded p-5">
                 <div class="panel panel-default"> <!--BootStrap classes that will trigger styles-->
                   <div class="panel body"><!--BootStrap classes that will trigger styles-->
-                    <form data-coffee-order = "form">
+                    <form data-tv = "tv-form">
                       <div class="form-group"> <!--BootStrap: layout typography style-->
                         <label for="coffeeOrder"><b>Title:</b></label>
-                        <input class="form-control" name="coffee" id="coffeeOrder" autofocus required pattern="[a-zA-Z\s]+">
+                        <input class="form-control" name="show_title" id="showId" autofocus required pattern="[a-zA-Z\s]+">
                       </div>
                       <div class="radio">
                         <label>
-                          <input type="radio" name="size" value="short" checked>
+                          <input type="radio" name="watch_watched" value="watch" checked>
                           Want to watch
                         </label>
                       </div>
                       <div class="radio">
                         <label>
-                          <input type="radio" name="size" value="tall">
+                          <input type="radio" name="watch_watched" value="watched">
                           Already watched
                         </label>
                       </div>
                       <div class="form-group">
                         <label for="flavorShot"><b>Genre:</b></label>
-                        <select id="flavorShot" class="form-control" name="flavor">
+                        <select id="flavorShot" class="form-control" name="genre">
                           <option value="">None</option>
                           <option value="Action">Action</option>
                           <option value="Adventure">Adventure</option>
@@ -115,6 +115,9 @@
               <div class="panel panel-default"> <!--BootStrap classes that will trigger styles-->
                 <div class="panel body"><!--BootStrap classes that will trigger styles-->
                   <h3><b>Watch List:</b></h3>
+                    <div data-tv = "tv-checklist">
+
+                    </div>
                 </div>
               </div>
           </div>
@@ -132,7 +135,10 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
+    <script src="javaScript/datastore.js" charset="utf-8"></script>
+    <script src="javaScript/formhandler.js" charset="utf-8"></script>
+    <script src="javaScript/main.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js" charset="utf-8"></script>
   </body>
 
 </html>
