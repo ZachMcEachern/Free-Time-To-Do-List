@@ -22,9 +22,9 @@
     }.bind(this));
   };
 
-  CheckList.prototype.addRow = function (coffeeOrder) {
-    this.removeRow(coffeeOrder.emailAddress); //remove any existing rows that match the email address
-    var rowElement = new Row(coffeeOrder); //create new instance of a row using the coffee order info
+  CheckList.prototype.addRow = function (watched_item) {
+    this.removeRow(watched_item.emailAddress); //remove any existing rows that match the email address
+    var rowElement = new Row(watched_item); //create new instance of a row using the coffee order info
     this.$element.append(rowElement.$element); //add the new row instance's $element property to the checklist
   }
 
@@ -32,20 +32,20 @@
     this.$element.find('[value = "' + email + '"]').closest('[data-coffee-order = "checkbox"]').remove();
   };
 
-  function Row(coffeeOrder) {
-    var $div = $('<div></div>', {'data-coffee-order': 'checkbox', 'class': 'checkbox'});
+  function Row(watched_item) {
+    var $div = $('<div></div>', {'data-tv': 'checkbox', 'class': 'checkbox'});
 
     var $label = $('<label></label>');
 
-    var $checkbox = $('<input></input>', {type:'checkbox', value: coffeeOrder.emailAddress});
+    var $checkbox = $('<input></input>', {type:'checkbox', value: watched_item.emailAddress});
 
-    var description = coffeeOrder.coffee + ' ';
-    if(coffeeOrder.flavor) {
-      description += coffeeOrder.flavor + ' ,';
+    var description = watched_item.coffee + ' ';
+    if(watched_item.flavor) {
+      description += watched_item.flavor + ' ,';
     }
-    description += coffeeOrder.size + ' ';
-    description += ' (' + coffeeOrder.emailAddress + ')';
-    description += ' [' + coffeeOrder.strength + 'x]';
+    description += watched_item.size + ' ';
+    description += ' (' + watched_item.emailAddress + ')';
+    description += ' [' + watched_item.strength + 'x]';
 
     $label.append($checkbox); //append connects elements together
     $label.append(description);
