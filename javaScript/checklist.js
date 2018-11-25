@@ -16,22 +16,22 @@
 
   CheckList.prototype.addClickHandler = function (fn){
     this.$element.on('click', 'input', function (event){
-      var email = event.target.value;
-      this.removeRow(email);
-      fn(email);
+      var removeItem = event.target.value;
+      this.removeRow(removeItem);
+      fn(removeItem);
     }.bind(this));
   };
 
   CheckList.prototype.addRow = function (watched_item) {
-    this.removeRow(watched_item.show_title); //remove any existing rows that match the email address
+    this.removeRow(watched_item.show_title); //remove any existing rows that match the removeItem address
     var rowElement = new Row(watched_item); //create new instance of a row using the coffee order info
     this.$element.append(rowElement.$element); //add the new row instance's $element property to the checklist
   }
-/*
-  CheckList.prototype.removeRow = function (email) {
-    this.$element.find('[value = "' + email + '"]').closest('[data-coffee-order = "checkbox"]').remove();
+
+  CheckList.prototype.removeRow = function (removeItem) {
+    this.$element.find('[value = "' + removeItem + '"]').closest('[data-tv = "checkbox"]').remove();
   };
-*/
+
   function Row(watched_item) {
     var $div = $('<div></div>', {'data-tv': 'checkbox', 'class': 'checkbox'});
 
@@ -55,7 +55,7 @@
   if (window.App == undefined) {
     window.App = {};
   }
-  
+
   App.CheckList = CheckList;
   window.App = App;
 })(window);
