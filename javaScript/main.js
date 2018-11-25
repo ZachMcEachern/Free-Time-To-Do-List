@@ -34,11 +34,11 @@
   var tv_db = new DataStore();
   window.tv_db = tv_db;
 
-  var tv_checklist = new CheckList(TV_SHOW_CHECKLIST_SELECTOR);
+  var checkList = new CheckList(TV_SHOW_CHECKLIST_SELECTOR);
 
   formHandler_tv.addSubmitHandler(function(data){
     tv_db.add_todo.call(tv_db, data);
-    CheckList.addRow.call(CheckList, data);
+    checkList.addRow.call(checkList, data);
   });
 
 
