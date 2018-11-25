@@ -2,7 +2,7 @@
   var App = window.App || {};
 
   var todo_list = new Array();
-  var tv_watched_list = new Array();
+  var done_list = new Array();
 
   function DataStore() {
     this.data = {};
@@ -23,7 +23,7 @@
 
   DataStore.prototype.remove_todo = function (key){
     done_list.push(key);
-    //console.log('From done list: ');
+    console.log('From done list: ');
     console.log(done_list);
     delete this.data[key]
   };
