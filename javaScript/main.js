@@ -27,14 +27,13 @@
   var FormHandler = App.FormHandler;
   var CheckList = App.CheckList; //import checklist module
 
-  //var checkList = new CheckList(CHECKLIST_SELECTOR);
-  //checkList.addClickHandler(myTruck.deliverOrder.bind(myTruck));
 
   var formHandler_tv = new FormHandler(TV_SHOW_FORM_SELECTOR);
   var tv_db = new DataStore();
   window.tv_db = tv_db;
 
   var checkList = new CheckList(TV_SHOW_CHECKLIST_SELECTOR);
+  checkList.addClickHandler(tv_db.remove_todo.bind(tv_db));
 
   formHandler_tv.addSubmitHandler(function(data){
     tv_db.add_todo.call(tv_db, data);
@@ -42,18 +41,6 @@
   });
 
 
-
-
-/*
-  formHandler.addSubmitHandler();
-  console.log(formHandler);
-
-  formHandler.addSubmitHandler(function (data){
-    myTruck.createOrder.call(myTruck,data); //returns AND invokes new version of function
-    checkList.addRow.call(checkList, data);
-  });
-*/
-  //formHandler.addInputHandler(Validation.isCompanyEmail); //calls email validation process
 
   if (window.App == undefined) {
     window.App = {};
