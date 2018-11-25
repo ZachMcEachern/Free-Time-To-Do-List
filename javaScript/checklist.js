@@ -39,11 +39,11 @@
 
     var $checkbox = $('<input></input>', {type:'checkbox', value: watched_item.show_title});
 
-    var description = watched_item.show_title + ' ';
+    var description = 'Title: ' + watched_item.show_title + ', ';
     if(watched_item.genre) {
-      description += watched_item.genre + ' ,';
+      description += 'Genre: ' + watched_item.genre;
     }
-    description += watched_item.watch_watched + ' ';
+    description += ' ';
 
     $label.append($checkbox); //append connects elements together
     $label.append(description);

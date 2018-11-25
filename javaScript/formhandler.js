@@ -31,7 +31,7 @@
         this.elements[0].focus(); //resets focus on the first field
     });
   };
-
+/*
   FormHandler.prototype.addInputHandler = function (fn) {
     console.log('Setting input handler for form');
     this.$formElement.on('input', '[name = "emailAddress"]', function(event){
@@ -45,7 +45,7 @@
       }
     });
   };
-
+*/
   App.FormHandler = FormHandler;
   window.App = App;
 
