@@ -38,7 +38,7 @@
 
   // Will display the list of completed items.
     //Load this first because there might be items in the completed when they come back from another page?
-  watched_tv_checkList.addRowCompleted.call(watched_tv_checkList, tv_db);
+//  watched_tv_checkList.addRowCompleted.call(watched_tv_checkList, tv_db);
 
   // Make a listener for whenever a checkbox gets clicked.
   checkList.addClickHandler(tv_db.remove_todo.bind(tv_db));
