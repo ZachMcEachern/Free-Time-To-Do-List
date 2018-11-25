@@ -2,7 +2,7 @@
   var App = window.App || {};
 
   var todo_list = new Array();
-  var done_list = new Array();
+  var tv_watched_list = new Array();
 
   function DataStore() {
     this.data = {};
