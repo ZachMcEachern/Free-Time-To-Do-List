@@ -13,6 +13,12 @@
     console.log(todo_list);
   };
 
+  DataStore.prototype.add_to_done = function(val){
+    done_list.push(key);
+    console.log('From done list: ');
+    console.log(done_list);
+  };
+
   DataStore.prototype.get = function (key){ //looks up value for instance's data property
     return this.data[key];
   };
@@ -22,9 +28,6 @@
   }
 
   DataStore.prototype.remove_todo = function (key){
-    done_list.push(key);
-    console.log('From done list: ');
-    console.log(done_list);
     delete this.data[key]
   };
 
