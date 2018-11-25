@@ -34,8 +34,11 @@
   var tv_db = new DataStore();
   window.tv_db = tv_db;
 
-  formHandler_tv.addSubmitHandler(tv_db.add_todo.bind(tv_db));
-  console.log(formHandler_tv);
+  formHandler_tv.addSubmitHandler(function(data){
+    tv_db.add_todo.call(tv_db, data);
+    CheckList.addRow.call(CheckList, data);
+  });
+
 
 
 
