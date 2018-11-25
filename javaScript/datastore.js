@@ -2,6 +2,7 @@
   var App = window.App || {};
 
   var todo_list = new Array();
+  var tv_watched_list = new Array();
 
   function DataStore() {
     this.data = {};
@@ -21,6 +22,11 @@
   }
 
   DataStore.prototype.remove_todo = function (key){
+    console.log("Activating 'remove_todo' function.");
+    
+    // Only saves the name of the show being removed from the checklist.
+    tv_watched_list.push(key);
+    console.log(tv_watched_list);
     delete this.data[key]
   };
 
