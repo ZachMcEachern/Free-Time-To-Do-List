@@ -52,7 +52,10 @@
     this.$element = $div;  //make subtree available as property of instance
   }
 
-
+  if (window.App == undefined) {
+    window.App = {};
+  }
+  
   App.CheckList = CheckList;
   window.App = App;
 })(window);
