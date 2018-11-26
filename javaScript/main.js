@@ -44,13 +44,19 @@
   checkList.addClickHandler(tv_db.remove_todo.bind(tv_db));
 
   formHandler_tv.addSubmitHandler(function(data){
-    //must watch
-    tv_db.add_todo.call(tv_db, data);
-    checkList.addRow.call(checkList, data);
+    console.log(data);
 
-    //Already watched
-    tv_db.add_to_done.call(tv_db, data);
-    watched_tv_checkList.addRow.call(watched_tv_checkList, data);
+    if (data.watch_watched === "watch"){
+      console.log("Statement was true");
+      //must watch
+      tv_db.add_todo.call(tv_db, data);
+      checkList.addRow.call(checkList, data);
+    }
+    else{
+      //Already watched
+      tv_db.add_to_done.call(tv_db, data);
+      watched_tv_checkList.addRow.call(watched_tv_checkList, data);
+    }
 
   });
 
