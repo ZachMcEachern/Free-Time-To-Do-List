@@ -14,7 +14,7 @@
   };
 
   DataStore.prototype.add_to_done = function(val){
-    done_list.push(key);
+    done_list.push(val);
     console.log('From done list: ');
     console.log(done_list);
   };
