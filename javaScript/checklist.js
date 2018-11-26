@@ -29,7 +29,7 @@
       }
       */
       //completed_checklist.addRow(itemMatch);
-      completed_checklist.addRow(removeItem);
+      completed_checklist.addList(removeItem);
       this.removeRow(removeItem);
       fn(removeItem);
     }.bind(this));
@@ -38,6 +38,12 @@
   CheckList.prototype.addRow = function (watched_item) {
     this.removeRow(watched_item.show_title); //remove any existing rows that match the removeItem address
     var rowElement = new Row(watched_item); //create new instance of a row using the coffee order info
+    this.$element.append(rowElement.$element); //add the new row instance's $element property to the checklist
+  }
+
+  CheckList.prototype.addList = function (item_name) {
+    //this.removeRow(watched_item.show_title); //remove any existing rows that match the removeItem address
+    var rowElement = new List(item_name); //create new instance of a row using the coffee order info
     this.$element.append(rowElement.$element); //add the new row instance's $element property to the checklist
   }
 
@@ -75,19 +81,11 @@
   }
 
   function List(item_name) {
-    var $div = $('<div></div>', {'data-tv': 'checkbox', 'class': 'checkbox'});
-
+    var $div = $('<div></div>');
     var $label = $('<label></label>');
 
-    var $checkbox = $('<input></input>', {type:'checkbox', value: watched_item.show_title});
+    var description = 'Title: ' + item_name;
 
-    var description = 'Title: ' + watched_item.show_title + ', ';
-    if(watched_item.genre) {
-      description += 'Genre: ' + watched_item.genre;
-    }
-    description += ' ';
-
-    $label.append($checkbox); //append connects elements together
     $label.append(description);
     $div.append($label);
 

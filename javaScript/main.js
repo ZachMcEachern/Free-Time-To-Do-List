@@ -66,9 +66,8 @@
     else{
       //Already watched
       tv_db.add_to_done.call(tv_db, data);
-      watched_tv_checkList.addRow.call(watched_tv_checkList, data);
+      watched_tv_checkList.addList(data.show_title);
     }
-
   });
 
 
