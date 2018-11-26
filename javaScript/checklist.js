@@ -14,9 +14,22 @@
     }
   }
 
-  CheckList.prototype.addClickHandler = function (fn){
+  CheckList.prototype.addClickHandler = function (fn, completed_checklist, todo_list){
     this.$element.on('click', 'input', function (event){
       var removeItem = event.target.value;
+      console.log(removeItem);
+      console.log(todo_list);
+      /*
+      for(let item of todo_list){
+        if(item.show_title == removeItem){
+          console.log("Found matching item. ");
+          console.log(item);
+          var itemMatch = item;
+        }
+      }
+      */
+      //completed_checklist.addRow(itemMatch);
+      completed_checklist.addRow(removeItem);
       this.removeRow(removeItem);
       fn(removeItem);
     }.bind(this));
@@ -26,6 +39,15 @@
     this.removeRow(watched_item.show_title); //remove any existing rows that match the removeItem address
     var rowElement = new Row(watched_item); //create new instance of a row using the coffee order info
     this.$element.append(rowElement.$element); //add the new row instance's $element property to the checklist
+  }
+
+  CheckList.prototype.addAllRow = function (list_of_items) {
+    console.log(list_of_items);
+    for(let item of list_of_items){
+      this.removeRow(watched_item.show_title); //remove any existing rows that match the removeItem address
+      var rowElement = new Row(item); //create new instance of a row using the coffee order info
+      this.$element.append(rowElement.$element); //add the new row instance's $element property to the checklist
+    }
   }
 
   CheckList.prototype.removeRow = function (removeItem) {

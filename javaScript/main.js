@@ -39,9 +39,20 @@
   // Will display the list of completed items.
     //Load this first because there might be items in the completed when they come back from another page?
   //watched_tv_checkList.addRowCompleted.call(watched_tv_checkList, tv_db);
+  console.log(tv_db.todo_list);
+  if(tv_db.todo_list != undefined){
+    console.log("To do list is not empty.");
+    checkList.addAllRow(tv_db.todo_list);
+  }
+
+  console.log(tv_db.done_list);
+  if(tv_db.done_list != undefined){
+    console.log("Done list is not empty.");
+    watched_tv_checkList.addAllRow(tv_db.done_list);
+  }
 
   // Make a listener for whenever a checkbox gets clicked.
-  checkList.addClickHandler(tv_db.remove_todo.bind(tv_db));
+  checkList.addClickHandler(tv_db.remove_todo.bind(tv_db), watched_tv_checkList, tv_db.todo_list);
 
   formHandler_tv.addSubmitHandler(function(data){
     console.log(data);

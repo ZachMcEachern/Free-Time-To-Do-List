@@ -1,5 +1,6 @@
 (function () {
   var App = window.App || {};
+  //var CheckList = App.CheckList; //import checklist module
 
   var todo_list = new Array();
   var done_list = new Array();
@@ -7,6 +8,14 @@
   function DataStore() {
     this.data = {};
   }
+
+  DataStore.prototype.isEmpty = function() {
+    for(var key in this) {
+        if(this.hasOwnProperty(key))
+            return false;
+    }
+    return true;
+  };
 
   DataStore.prototype.add_todo = function (val){
     todo_list.push(val);
@@ -28,6 +37,19 @@
   }
 
   DataStore.prototype.remove_todo = function (key){
+    console.log("The key being passed to remove_todo is: " + key);
+
+    for(let item of todo_list){
+      if(item.show_title == key){
+        console.log("Found matching item. ");
+        console.log(item);
+        done_list.push(item);
+
+      }
+    }
+    //done_list.push(key);
+    console.log("Done list: ");
+    console.log(done_list);
     delete this.data[key]
   };
 
