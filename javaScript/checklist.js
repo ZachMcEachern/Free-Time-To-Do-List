@@ -74,6 +74,26 @@
     this.$element = $div;  //make subtree available as property of instance
   }
 
+  function List(item_name) {
+    var $div = $('<div></div>', {'data-tv': 'checkbox', 'class': 'checkbox'});
+
+    var $label = $('<label></label>');
+
+    var $checkbox = $('<input></input>', {type:'checkbox', value: watched_item.show_title});
+
+    var description = 'Title: ' + watched_item.show_title + ', ';
+    if(watched_item.genre) {
+      description += 'Genre: ' + watched_item.genre;
+    }
+    description += ' ';
+
+    $label.append($checkbox); //append connects elements together
+    $label.append(description);
+    $div.append($label);
+
+    this.$element = $div;  //make subtree available as property of instance
+  }
+
   if (window.App == undefined) {
     window.App = {};
   }
