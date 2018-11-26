@@ -44,8 +44,14 @@
   checkList.addClickHandler(tv_db.remove_todo.bind(tv_db));
 
   formHandler_tv.addSubmitHandler(function(data){
+    //must watch
     tv_db.add_todo.call(tv_db, data);
     checkList.addRow.call(checkList, data);
+
+    //Already watched
+    tv_db.add_to_done.call(tv_db, data);
+    watched_tv_checkList.addRow.call(watched_tv_checkList, data);
+
   });
 
 
