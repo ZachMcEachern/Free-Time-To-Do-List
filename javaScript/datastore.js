@@ -44,6 +44,10 @@
         console.log("Found matching item. ");
         console.log(item);
         done_list.push(item);
+        if(item.genre === "Action")
+        {
+          console.log("Action Genre");
+        }
       }
     }
     //done_list.push(key);
