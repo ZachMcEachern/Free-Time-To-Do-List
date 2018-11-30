@@ -44,7 +44,7 @@
         console.log("Found matching item. ");
         console.log(item);
         done_list.push(item);
-        console.log(item.genre);
+        console.log(item.show_title);
       }
     }
     //done_list.push(key);
