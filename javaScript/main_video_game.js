@@ -17,19 +17,6 @@
   var CheckList = App.CheckList; //import checklist module
 
 
-  //TV CHECKLIST STUFF______________________________________________________________________________________________
-
-
-
-
-
-
-
-
-
-
-
-  //MOVIE STUFF WILL GO HERE_____________________________(CHANGE TO MOVIE VARIABLES)__________________________________________________________
   var formHandler_game = new FormHandler(GAME_FORM_SELECTOR);
   var game_db = new DataStore();
   window.game_db = game_db;
@@ -70,22 +57,6 @@
       watched_game_checkList.addList(data.show_title);
     }
   });
-
-
-
-
-
-
-
-
-
-
-  //BOOK STUFF WILL GO HERE_______________________________________________________________________________________
-
-
-
-  //VIDEO GAME STUFF WILL GO HERE_______________________________________________________________________________________
-
 
 
   if (window.App == undefined) {

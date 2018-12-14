@@ -16,20 +16,7 @@
   var FormHandler = App.FormHandler;
   var CheckList = App.CheckList; //import checklist module
 
-
-  //TV CHECKLIST STUFF______________________________________________________________________________________________
-
-
-
-
-
-
-
-
-
-
-
-  //MOVIE STUFF WILL GO HERE_____________________________(CHANGE TO MOVIE VARIABLES)__________________________________________________________
+  //MOVIE STUFF WILL GO HERE_____________________________
   var formHandler_movie = new FormHandler(MOVIE_FORM_SELECTOR);
   var movie_db = new DataStore();
   window.movie_db = movie_db;
@@ -70,22 +57,6 @@
       watched_movie_checkList.addList(data.show_title);
     }
   });
-
-
-
-
-
-
-
-
-
-
-  //BOOK STUFF WILL GO HERE_______________________________________________________________________________________
-
-
-
-  //VIDEO GAME STUFF WILL GO HERE_______________________________________________________________________________________
-
 
 
   if (window.App == undefined) {
