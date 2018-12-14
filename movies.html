@@ -61,6 +61,85 @@
       </div>
     </nav>
 
+
+    <section class="page-section about-heading">
+      <div class="container">
+        <div class="about-heading-content">
+          <div class="row">
+            <div class="col-xl-9 col-lg-10 mx-auto">
+
+<!--Form Section-->
+              <br>
+              <div class="bg-faded rounded p-5">
+                <div class="panel panel-default"> <!--BootStrap classes that will trigger styles-->
+                  <div class="panel body"><!--BootStrap classes that will trigger styles-->
+                    <form data-movie = "movie-form">
+                      <div class="form-group"> <!--BootStrap: layout typography style-->
+                        <label for="coffeeOrder"><b>Title:</b></label>
+                        <input class="form-control" name="movie_title" id="movieId" autofocus required pattern="[a-zA-Z\s]+">
+                      </div>
+                      <div class="radio">
+                        <label>
+                          <input type="radio" name="watch_watched" value="watch" checked>
+                          Want to watch
+                        </label>
+                      </div>
+                      <div class="radio">
+                        <label>
+                          <input type="radio" name="watch_watched" value="watched">
+                          Already watched
+                        </label>
+                      </div>
+                      <div class="form-group">
+                        <label for="flavorShot"><b>Genre:</b></label>
+                        <select id="flavorShot" class="form-control" name="genre">
+                          <option value="">None</option>
+                          <option value="Action">Action</option>
+                          <option value="Adventure">Adventure</option>
+                          <option value="Comedy">Comedy</option>
+                          <option value="Crime">Crime</option>
+                          <option value="Drama">Drama</option>
+                          <option value="Fantasy">Fantasy</option>
+                          <option value="Horror">Horror</option>
+                          <option value="Romance">Romance</option>
+                          <option value="Science-Fiction">Science-Fiction</option>
+                        </select>
+                      </div>
+                      <button type="submit" class="btn btn-default">Add</button>
+                      <button type="reset" class="btn btn-default">Reset</button>
+                    </form>
+                  </div>
+                </div>
+            </div> <br>
+
+<!--Need to watch checklist section-->
+            <div class="bg-faded rounded p-5">
+              <div class="panel panel-default"> <!--BootStrap classes that will trigger styles-->
+                <div class="panel body"><!--BootStrap classes that will trigger styles-->
+                  <h3><b>Must Watch Movies:</b></h3>
+                    <div data-movie="movie-checklist">
+                    </div>
+                </div>
+              </div>
+          </div>
+          <br>
+
+<!--Aready Watched list section-->
+          <div class="bg-faded rounded p-5">
+            <div class="panel panel-default"> <!--BootStrap classes that will trigger styles-->
+              <div class="panel body"><!--BootStrap classes that will trigger styles-->
+                <h3><b>Already Watched Movies:</b></h3>
+                  <div data-movie="movie-watched_checklist">
+                  </div>
+              </div>
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    </section>
+
 <!--
     <section class="page-section">
       <div class="container">
@@ -134,7 +213,12 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="javaScript/datastore.js" charset="utf-8"></script>
+    <script src="javaScript/formhandler.js" charset="utf-8"></script>
+    <script src="javaScript/checklist.js" charset="utf-8"></script>
+    <script src="javaScript/main.js" charset="utf-8"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js" charset="utf-8"></script>
   </body>
 
 </html>
