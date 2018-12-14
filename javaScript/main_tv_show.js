@@ -12,7 +12,6 @@
 
 
   var App = window.App;
-  var Truck = App.Truck;
   var DataStore = App.DataStore;
   var FormHandler = App.FormHandler;
   var CheckList = App.CheckList; //import checklist module
