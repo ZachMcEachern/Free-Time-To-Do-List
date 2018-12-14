@@ -17,7 +17,6 @@
   var FormHandler = App.FormHandler;
   var CheckList = App.CheckList; //import checklist module
 
-
   //BOOK STUFF WILL GO HERE_______________________________________________________________________________________
   var formHandler_book = new FormHandler(BOOK_FORM_SELECTOR);
   var book_db = new DataStore();
